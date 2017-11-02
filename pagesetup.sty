@@ -1,7 +1,8 @@
 \usepackage{amsfonts,graphicx}
 \usepackage{amsfonts,latexsym,amsthm,amssymb,amsmath,euscript}
 \usepackage{mathrsfs,manfnt,enumitem,stmaryrd}
-\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,%
+            hypertexnames=false]{hyperref}
 
 % since we're using the custom \lecture definition, we want to recenter around that
 \setcounter{tocdepth}{1}
@@ -17,6 +18,7 @@
    \thispagestyle{plain}
    \newpage
    \setcounter{lecnum}{#1}
+   \setcounter{subsection}{0}
    \noindent
    \begin{center}
    \framebox{
